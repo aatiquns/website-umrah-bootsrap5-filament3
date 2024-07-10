@@ -65,6 +65,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-#### INI MENCOBA PUSH TO REPOSITORY
+####SEBELUM MEMBUKA FILE INI LIHAT PENTUNJUK SEBAGAI BERIKUT
 
-**jika ini nampak maka push berhasil**
+1. git clone repository ini dengan http atau ssh
+2. pastikan laragon atau xampp bisa telah on
+3. pastikan pada file .env telah di periksa koneksi database
+4. jalankan php artisan migrate untuk migrasi skema database
+5. jalankan php artisan serve
+
+##setelah semua selesai maka anda juga dapat membukan ADMIN dengan prosedur dibawah ini
+
+1. buat akun login dengan dengan menjalankan *php artisan make:filament-user*
+2. buatlah aku sesuai dengan *UserSeeders* pada Seeder databaase atau boleh *custom(harus ingat password!!)*
+2. lalu ketik url routes dengan http://127.0.0.1:8000/admin akan tampil login ADMIN FILAMENT
+4. masukkan email dan password yang telah di buat, klik LOGIN.
+5. anda dapat CRUD sliders,testimonials,dan paket umrah dalam admin login tersebut.
