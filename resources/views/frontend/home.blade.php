@@ -83,7 +83,7 @@
                         <h5 class="card-title">Card title</h5>
                         <span class="text-black-50"> <i class='bx bx-calendar'></i> {{ $umrah_package->tanggal }} </span>
                         <p class="card-text fs-4 text-success">{{ number_format($umrah_package->price,0,'.','.') }}</p>
-                        <a href="detail.html" class="mx-auto text-center btn d-block btn-primary">Detail</a>
+                        <a href="{{ route('paket.show', $umrah_package->slug) }}" class="mx-auto text-center btn d-block btn-primary">Details</a>
                     </div>
                 </div>
             </div>
